@@ -6,6 +6,8 @@ const { respondNotFound } = require('./helpers');
 
 // IMPORT ROUTES
 
+const api = require('./routes/api');
+
 //
 
 const app =  express();
@@ -19,7 +21,10 @@ app.use(bodyParser.json({ limit: '100mb' }));
 
 // ROUTES
 
-//
+app.get('/getAll', api.getAll);
+app.get('/getOne/:id', api.getOne);
+app.post('/addOne', api.addOne);
+app.delete('/delete/:id', api.delete);
 
 // ERROR HANDLERS
 
