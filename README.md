@@ -37,7 +37,7 @@ Visit [mongodb site](https://www.mongodb.com/cloud/atlas) for help, after loggin
 Finally you can write `npm start` in your terminal (in project main folder). 
 
 ### API
-If running locally, don't forget about "localhost:3000" prefix. If running on some hosting then your domain name is your prefix.
+If running locally, don't forget about "localhost:3000" prefix. If running on some hosting then your domain name is your prefix. "/addOne" route is built to handle data from request body.
 
 * /getAll - getting all data from the database,
 * /getOne/:id - getting single document with given id,
