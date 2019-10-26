@@ -1,4 +1,5 @@
 const  { app } = require('./app.js');
+const { connect } = require('./client.js');
 const dotenv = require('dotenv');
 
 dotenv.config();
@@ -9,3 +10,4 @@ app.listen(port, () => {
     console.log(`Server is listening on port ${port}`)
 });
 
+connect();
